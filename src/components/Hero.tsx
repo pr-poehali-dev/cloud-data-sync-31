@@ -25,13 +25,23 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+      <div className="absolute inset-0 bg-black/50 z-[5]" />
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 opacity-80">
+          19 апреля — День единых действий
         </p>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+          ПОМНИМ.<br />ЧТИМ.<br />СКОРБИМ.
+        </h1>
+        <p className="text-base md:text-xl max-w-2xl mx-auto opacity-90 leading-relaxed">
+          Викторина в память о жертвах геноцида советского народа<br className="hidden md:block" /> в годы Великой Отечественной войны
+        </p>
+        <a
+          href="#quiz"
+          className="inline-block mt-8 border border-white text-white px-8 py-3 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition-all duration-300"
+        >
+          Пройти викторину
+        </a>
       </div>
     </div>
   );
